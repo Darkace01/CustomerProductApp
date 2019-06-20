@@ -30,33 +30,45 @@ namespace CustomerProductApp.Forms
         {
             string loginUserName = txtUserName.Text;
             var isUser = false;
-
-            using (var db = new AppDbContext())
+            if (txtUserName.Text == "")
             {
-                foreach (var userName in db.Users)
+                if (txtPassword.Text == "")
                 {
-                    foreach (var item in db.Users)
-                    {
-                        try
-                        {
-                            if (item.UserName.Equals(loginUserName))
-                            {
-                                isUser = true;
-                            }
-                        }catch
-                        {
+                    MessageBox.Show("Please Input Password");
+                }
+                MessageBox.Show("Please Input Username");
+            }
+            else
+            {
 
-                        }
-                        }
-                    if (isUser == true)
+                using (var db = new AppDbContext())
+                {
+                    foreach (var userName in db.Users)
                     {
-                        Menu newMenu = new Menu();
-                        this.Hide();
-                        newMenu.ShowDialog();
-                    }
-                    else
-                    {
-                        labelAlert.Text = "Invalid Username or password";
+                        foreach (var item in db.Users)
+                        {
+                            try
+                            {
+                                if (item.UserName.Equals(loginUserName))
+                                {
+                                    isUser = true;
+                                }
+                            }
+                            catch
+                            {
+
+                            }
+                        }
+                        if (isUser == true)
+                        {
+                            Menu newMenu = new Menu();
+                            this.Hide();
+                            newMenu.ShowDialog();
+                        }
+                        else
+                        {
+                            labelAlert.Text = "Invalid Username or password";
+                        }
                     }
                 }
             }

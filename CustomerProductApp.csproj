@@ -119,6 +119,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>KazDbDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="KazDbDataSet1.cs">
+      <DependentUpon>KazDbDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="KazDbDataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
