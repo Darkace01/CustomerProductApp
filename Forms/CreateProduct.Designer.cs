@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label6 = new System.Windows.Forms.Label();
             this.BackBtn = new System.Windows.Forms.Button();
             this.SubmitBtn = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
@@ -42,22 +41,13 @@
             this.txtQuantity = new System.Windows.Forms.TextBox();
             this.txtItemName = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.SuspendLayout();
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.label6.Location = new System.Drawing.Point(297, 68);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(200, 31);
-            this.label6.TabIndex = 50;
-            this.label6.Text = "Add New Order";
             // 
             // BackBtn
             // 
             this.BackBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.BackBtn.Location = new System.Drawing.Point(164, 336);
+            this.BackBtn.Location = new System.Drawing.Point(190, 336);
             this.BackBtn.Name = "BackBtn";
             this.BackBtn.Size = new System.Drawing.Size(95, 43);
             this.BackBtn.TabIndex = 49;
@@ -68,7 +58,7 @@
             // SubmitBtn
             // 
             this.SubmitBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.SubmitBtn.Location = new System.Drawing.Point(303, 336);
+            this.SubmitBtn.Location = new System.Drawing.Point(297, 336);
             this.SubmitBtn.Name = "SubmitBtn";
             this.SubmitBtn.Size = new System.Drawing.Size(95, 43);
             this.SubmitBtn.TabIndex = 48;
@@ -129,7 +119,7 @@
             // txtAmount
             // 
             this.txtAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            this.txtAmount.Location = new System.Drawing.Point(440, 279);
+            this.txtAmount.Location = new System.Drawing.Point(400, 279);
             this.txtAmount.Name = "txtAmount";
             this.txtAmount.Size = new System.Drawing.Size(168, 27);
             this.txtAmount.TabIndex = 42;
@@ -137,7 +127,7 @@
             // txtTax
             // 
             this.txtTax.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            this.txtTax.Location = new System.Drawing.Point(440, 240);
+            this.txtTax.Location = new System.Drawing.Point(400, 240);
             this.txtTax.Name = "txtTax";
             this.txtTax.Size = new System.Drawing.Size(168, 27);
             this.txtTax.TabIndex = 41;
@@ -145,7 +135,7 @@
             // txtPrice
             // 
             this.txtPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            this.txtPrice.Location = new System.Drawing.Point(440, 201);
+            this.txtPrice.Location = new System.Drawing.Point(400, 201);
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.Size = new System.Drawing.Size(168, 27);
             this.txtPrice.TabIndex = 40;
@@ -153,7 +143,7 @@
             // txtQuantity
             // 
             this.txtQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            this.txtQuantity.Location = new System.Drawing.Point(440, 162);
+            this.txtQuantity.Location = new System.Drawing.Point(400, 162);
             this.txtQuantity.Name = "txtQuantity";
             this.txtQuantity.Size = new System.Drawing.Size(168, 27);
             this.txtQuantity.TabIndex = 39;
@@ -161,7 +151,7 @@
             // txtItemName
             // 
             this.txtItemName.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            this.txtItemName.Location = new System.Drawing.Point(440, 123);
+            this.txtItemName.Location = new System.Drawing.Point(400, 123);
             this.txtItemName.Name = "txtItemName";
             this.txtItemName.Size = new System.Drawing.Size(168, 27);
             this.txtItemName.TabIndex = 38;
@@ -169,7 +159,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.button1.Location = new System.Drawing.Point(442, 336);
+            this.button1.Location = new System.Drawing.Point(404, 336);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(164, 43);
             this.button1.TabIndex = 51;
@@ -177,13 +167,22 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.groupBox1.Location = new System.Drawing.Point(169, 54);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(438, 343);
+            this.groupBox1.TabIndex = 52;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Add New Order";
+            // 
             // CreateProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.BackBtn);
             this.Controls.Add(this.SubmitBtn);
             this.Controls.Add(this.label5);
@@ -196,6 +195,7 @@
             this.Controls.Add(this.txtPrice);
             this.Controls.Add(this.txtQuantity);
             this.Controls.Add(this.txtItemName);
+            this.Controls.Add(this.groupBox1);
             this.Name = "CreateProduct";
             this.Text = "CreateProduct";
             this.ResumeLayout(false);
@@ -204,8 +204,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button BackBtn;
         private System.Windows.Forms.Button SubmitBtn;
         private System.Windows.Forms.Label label5;
@@ -219,5 +217,6 @@
         private System.Windows.Forms.TextBox txtQuantity;
         private System.Windows.Forms.TextBox txtItemName;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }

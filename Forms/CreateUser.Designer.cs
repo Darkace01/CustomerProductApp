@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label4 = new System.Windows.Forms.Label();
             this.backBtn = new System.Windows.Forms.Button();
             this.Addbtn = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
@@ -38,25 +37,15 @@
             this.txtUserName = new System.Windows.Forms.TextBox();
             this.txtFullName = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.SuspendLayout();
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
-            this.label4.Location = new System.Drawing.Point(261, 70);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(237, 39);
-            this.label4.TabIndex = 26;
-            this.label4.Text = "Add New User";
             // 
             // backBtn
             // 
             this.backBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.backBtn.Location = new System.Drawing.Point(113, 328);
+            this.backBtn.Location = new System.Drawing.Point(160, 320);
             this.backBtn.Name = "backBtn";
-            this.backBtn.Size = new System.Drawing.Size(173, 47);
+            this.backBtn.Size = new System.Drawing.Size(138, 47);
             this.backBtn.TabIndex = 25;
             this.backBtn.Text = "Back";
             this.backBtn.UseVisualStyleBackColor = true;
@@ -65,9 +54,9 @@
             // Addbtn
             // 
             this.Addbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.Addbtn.Location = new System.Drawing.Point(325, 328);
+            this.Addbtn.Location = new System.Drawing.Point(321, 320);
             this.Addbtn.Name = "Addbtn";
-            this.Addbtn.Size = new System.Drawing.Size(173, 47);
+            this.Addbtn.Size = new System.Drawing.Size(138, 47);
             this.Addbtn.TabIndex = 24;
             this.Addbtn.Text = "Add New User";
             this.Addbtn.UseVisualStyleBackColor = true;
@@ -112,7 +101,7 @@
             this.txtPassword.Location = new System.Drawing.Point(394, 261);
             this.txtPassword.Margin = new System.Windows.Forms.Padding(4);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(257, 30);
+            this.txtPassword.Size = new System.Drawing.Size(213, 30);
             this.txtPassword.TabIndex = 20;
             this.txtPassword.UseSystemPasswordChar = true;
             // 
@@ -122,7 +111,7 @@
             this.txtUserName.Location = new System.Drawing.Point(394, 202);
             this.txtUserName.Margin = new System.Windows.Forms.Padding(4);
             this.txtUserName.Name = "txtUserName";
-            this.txtUserName.Size = new System.Drawing.Size(257, 30);
+            this.txtUserName.Size = new System.Drawing.Size(213, 30);
             this.txtUserName.TabIndex = 19;
             // 
             // txtFullName
@@ -131,19 +120,29 @@
             this.txtFullName.Location = new System.Drawing.Point(394, 147);
             this.txtFullName.Margin = new System.Windows.Forms.Padding(4);
             this.txtFullName.Name = "txtFullName";
-            this.txtFullName.Size = new System.Drawing.Size(257, 30);
+            this.txtFullName.Size = new System.Drawing.Size(213, 30);
             this.txtFullName.TabIndex = 18;
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.button1.Location = new System.Drawing.Point(532, 328);
+            this.button1.Location = new System.Drawing.Point(482, 320);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(173, 47);
+            this.button1.Size = new System.Drawing.Size(138, 47);
             this.button1.TabIndex = 27;
             this.button1.Text = "View All User";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.Button1_Click);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.groupBox1.Location = new System.Drawing.Point(141, 54);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(494, 343);
+            this.groupBox1.TabIndex = 33;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Add New User";
             // 
             // CreateUser
             // 
@@ -151,7 +150,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.backBtn);
             this.Controls.Add(this.Addbtn);
             this.Controls.Add(this.label3);
@@ -160,6 +158,7 @@
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUserName);
             this.Controls.Add(this.txtFullName);
+            this.Controls.Add(this.groupBox1);
             this.Name = "CreateUser";
             this.Text = "CreateUser";
             this.ResumeLayout(false);
@@ -168,8 +167,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button backBtn;
         private System.Windows.Forms.Button Addbtn;
         private System.Windows.Forms.Label label3;
@@ -179,5 +176,6 @@
         private System.Windows.Forms.TextBox txtUserName;
         private System.Windows.Forms.TextBox txtFullName;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }

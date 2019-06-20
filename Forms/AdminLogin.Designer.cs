@@ -29,41 +29,31 @@
         private void InitializeComponent()
         {
             this.AdminBackBtn = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
             this.newUserAdd = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txtAdminPass = new System.Windows.Forms.TextBox();
             this.txtAdminUser = new System.Windows.Forms.TextBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.SuspendLayout();
             // 
             // AdminBackBtn
             // 
             this.AdminBackBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.AdminBackBtn.Location = new System.Drawing.Point(158, 289);
+            this.AdminBackBtn.Location = new System.Drawing.Point(273, 289);
             this.AdminBackBtn.Name = "AdminBackBtn";
-            this.AdminBackBtn.Size = new System.Drawing.Size(205, 61);
+            this.AdminBackBtn.Size = new System.Drawing.Size(75, 44);
             this.AdminBackBtn.TabIndex = 25;
             this.AdminBackBtn.Text = "Back";
             this.AdminBackBtn.UseVisualStyleBackColor = true;
             this.AdminBackBtn.Click += new System.EventHandler(this.AdminBackBtn_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.label3.Location = new System.Drawing.Point(279, 69);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(163, 31);
-            this.label3.TabIndex = 24;
-            this.label3.Text = "Admin Login";
             // 
             // newUserAdd
             // 
             this.newUserAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.newUserAdd.Location = new System.Drawing.Point(445, 289);
             this.newUserAdd.Name = "newUserAdd";
-            this.newUserAdd.Size = new System.Drawing.Size(205, 61);
+            this.newUserAdd.Size = new System.Drawing.Size(75, 44);
             this.newUserAdd.TabIndex = 23;
             this.newUserAdd.Text = "Login";
             this.newUserAdd.UseVisualStyleBackColor = true;
@@ -94,7 +84,7 @@
             this.txtAdminPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
             this.txtAdminPass.Location = new System.Drawing.Point(393, 205);
             this.txtAdminPass.Name = "txtAdminPass";
-            this.txtAdminPass.Size = new System.Drawing.Size(235, 27);
+            this.txtAdminPass.Size = new System.Drawing.Size(186, 27);
             this.txtAdminPass.TabIndex = 20;
             this.txtAdminPass.UseSystemPasswordChar = true;
             // 
@@ -103,8 +93,18 @@
             this.txtAdminUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
             this.txtAdminUser.Location = new System.Drawing.Point(393, 145);
             this.txtAdminUser.Name = "txtAdminUser";
-            this.txtAdminUser.Size = new System.Drawing.Size(235, 27);
+            this.txtAdminUser.Size = new System.Drawing.Size(186, 27);
             this.txtAdminUser.TabIndex = 19;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.groupBox1.Location = new System.Drawing.Point(165, 50);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(438, 343);
+            this.groupBox1.TabIndex = 33;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Admin Login";
             // 
             // AdminLogin
             // 
@@ -112,12 +112,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.AdminBackBtn);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.newUserAdd);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtAdminPass);
             this.Controls.Add(this.txtAdminUser);
+            this.Controls.Add(this.groupBox1);
             this.Name = "AdminLogin";
             this.Text = "AdminLogin";
             this.ResumeLayout(false);
@@ -128,11 +128,11 @@
         #endregion
 
         private System.Windows.Forms.Button AdminBackBtn;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button newUserAdd;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtAdminPass;
         private System.Windows.Forms.TextBox txtAdminUser;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }

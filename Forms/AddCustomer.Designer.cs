@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label5 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.customerSubmit = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
@@ -39,17 +38,8 @@
             this.txtCustomerEmail = new System.Windows.Forms.TextBox();
             this.txtCustomerPhone = new System.Windows.Forms.TextBox();
             this.txtCustomerName = new System.Windows.Forms.TextBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.SuspendLayout();
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.label5.Location = new System.Drawing.Point(283, 74);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(187, 31);
-            this.label5.TabIndex = 31;
-            this.label5.Text = "Add Customer";
             // 
             // button2
             // 
@@ -145,12 +135,21 @@
             this.txtCustomerName.Size = new System.Drawing.Size(168, 27);
             this.txtCustomerName.TabIndex = 21;
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.groupBox1.Location = new System.Drawing.Point(182, 60);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(438, 343);
+            this.groupBox1.TabIndex = 32;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Add A Customer";
+            // 
             // AddCustomer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.customerSubmit);
             this.Controls.Add(this.label4);
@@ -161,6 +160,7 @@
             this.Controls.Add(this.txtCustomerEmail);
             this.Controls.Add(this.txtCustomerPhone);
             this.Controls.Add(this.txtCustomerName);
+            this.Controls.Add(this.groupBox1);
             this.Name = "AddCustomer";
             this.Text = "AddCustomer";
             this.ResumeLayout(false);
@@ -169,8 +169,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button customerSubmit;
         private System.Windows.Forms.Label label4;
@@ -181,5 +179,6 @@
         private System.Windows.Forms.TextBox txtCustomerEmail;
         private System.Windows.Forms.TextBox txtCustomerPhone;
         private System.Windows.Forms.TextBox txtCustomerName;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }

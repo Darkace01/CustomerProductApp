@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label3 = new System.Windows.Forms.Label();
             this.labelAlert = new System.Windows.Forms.Label();
             this.labelValid = new System.Windows.Forms.Label();
             this.newUserBtn = new System.Windows.Forms.Button();
@@ -37,17 +36,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.txtUserName = new System.Windows.Forms.TextBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.SuspendLayout();
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
-            this.label3.Location = new System.Drawing.Point(336, 90);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(101, 39);
-            this.label3.TabIndex = 25;
-            this.label3.Text = "Login";
             // 
             // labelAlert
             // 
@@ -128,12 +118,21 @@
             this.txtUserName.Size = new System.Drawing.Size(174, 30);
             this.txtUserName.TabIndex = 17;
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.groupBox1.Location = new System.Drawing.Point(181, 54);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(438, 343);
+            this.groupBox1.TabIndex = 33;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Login";
+            // 
             // UserLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.labelAlert);
             this.Controls.Add(this.labelValid);
             this.Controls.Add(this.newUserBtn);
@@ -142,6 +141,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUserName);
+            this.Controls.Add(this.groupBox1);
             this.Name = "UserLogin";
             this.Text = "UserLogin";
             this.ResumeLayout(false);
@@ -150,8 +150,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label labelAlert;
         private System.Windows.Forms.Label labelValid;
         private System.Windows.Forms.Button newUserBtn;
@@ -160,5 +158,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.TextBox txtUserName;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }
