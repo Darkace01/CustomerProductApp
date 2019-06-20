@@ -30,7 +30,14 @@ namespace CustomerProductApp.Data
 
             };
             context.Customers.Add(customer);
-            
+            var user = new User
+            {
+                UserName = "kaz",
+                Password = "kaz"
+
+            };
+            context.Users.Add(user);
+
             context.SaveChanges();
             base.Seed(context);
         }

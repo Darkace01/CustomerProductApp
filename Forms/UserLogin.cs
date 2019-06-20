@@ -43,8 +43,9 @@ namespace CustomerProductApp.Forms
 
                 using (var db = new AppDbContext())
                 {
-                    foreach (var userName in db.Users)
-                    {
+
+/*                    foreach (var userName in db.Users)
+                    {*/
                         foreach (var item in db.Users)
                         {
                             try
@@ -70,7 +71,7 @@ namespace CustomerProductApp.Forms
                             labelAlert.Text = "Invalid Username or password";
                         }
                     }
-                }
+                
             }
         }
     }
